@@ -66,3 +66,7 @@ Copyright © 2026 上海如静知华信息科技有限公司。
 | ![微信咨询二维码一](docs/images/zhuatech-wechat-consulting.png) | ![微信咨询二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO：企业知识搜索与检索增强平台、ESEARCH系统源码、企业数字化、Java企业系统、Vue管理系统、知华科技、上海如静知华信息科技有限公司。
+
+## V2.0 专业权限检索域
+
+新增知识源、索引文档、用户/用户组 ACL、查询日志和相关性反馈模型。检索先执行组织与文档权限过滤，再计算关键词相关度；结果返回文档级引用和可供外部模型适配器使用的引用上下文。本工程不绑定模型，使用方可自行配置 DeepSeek 等服务。专业入口为“权限知识检索”，API 根路径为 `/api/search-ops`。

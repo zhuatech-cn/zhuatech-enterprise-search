@@ -36,3 +36,15 @@
 | `freshnessDays` | int | 索引新鲜度(天) |
 
 接口统一返回 `ApiResponse`；业务冲突使用 HTTP 409，参数错误使用 400，未认证使用 401，无权限使用 403。
+
+## 专业权限检索接口
+
+| 方法 | 路径 | 说明 |
+| --- | --- | --- |
+| GET | `/api/search-ops/dashboard` | 知识源、索引和查询总览 |
+| POST | `/api/search-ops/sources` | 登记知识源 |
+| POST | `/api/admin/search-ops/sources/{id}/activate` | 启用知识源 |
+| POST | `/api/search-ops/sources/{id}/documents` | 索引文档与 ACL |
+| POST | `/api/search-ops/search` | 执行权限过滤、相关度排序和引用组装 |
+| POST | `/api/search-ops/feedback` | 记录查询结果反馈 |
+| POST | `/api/admin/search-ops/documents/{id}/retire` | 下线索引文档 |
