@@ -53,6 +53,10 @@ cd .. && cp .env.example .env && docker compose up --build
 
 开发演示账号：`admin / admin123`、`operator / operator123`。生产环境必须通过环境变量替换全部默认凭据。
 
+## 搜索数据源发布治理
+
+新增数据源进入企业统一搜索前的发布门禁，统一校验源权限与搜索 ACL、敏感信息、保留策略、采集范围、内容安全、法律保全、检索质量与回滚准备。详见[企业搜索数据源发布](docs/ENTERPRISE_SOURCE_PUBLICATION.md)。
+
 ## 许可与商业授权
 
 Copyright © 2026 上海如静知华信息科技有限公司。
